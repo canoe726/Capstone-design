@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordPopupActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- 타이틀바 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="#DC143C"
+                android:gravity="center"
+                android:text="목소리 인증"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- //end 타이틀바 -->
+
+        <!-- Notice -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!--
+            <TextView
+                android:id="@+id/random_char"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="랜덤 글자"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textSize="25dp"/>
+            -->
+
+            <Button
+                android:id="@+id/recordBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:width="180dp"
+                android:textSize="16dp"
+                android:background="#F4A460"
+                android:text="녹음" />
+
+            <Button
+                android:id="@+id/recordStopBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:width="180dp"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:background="#F4A460"
+                android:text="녹음중지" />
+
+            <Button
+                android:id="@+id/playBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:width="180dp"
+                android:textSize="16dp"
+                android:background="#F4A460"
+                android:layout_gravity="center"
+                android:text="재생" />
+
+            <Button
+                android:id="@+id/playStopBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:width="180dp"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:background="#F4A460"
+                android:text="재생중지" />
+        </LinearLayout>
+        <!-- Notice -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#66bdbdbd" />
+
+        <!-- 닫기 버튼 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/okBtn"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="#00000000"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="전송"
+                android:textColor="#DC143C"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!--// 닫기 버튼 -->
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
